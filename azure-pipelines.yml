@@ -10,6 +10,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: CmdLine@2
+- task: Docker@2
   inputs:
-    script: 'docker build -f DC.CP.Web/Dockerfile -t hello-net-core .'
+    command: 'build'
+    Dockerfile: 'DC.CP.Web/Dockerfile'
+    buildContext: ''
