@@ -5,7 +5,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1-stretch AS build
 WORKDIR /src
-COPY ["DC.CP.Web/DC.CP.Web.csproj", "DC.CP.Web/"]
+COPY ["DC.CP.Web.csproj", "DC.CP.Web/"]
 RUN dotnet restore "DC.CP.Web/DC.CP.Web.csproj"
 COPY . .
 WORKDIR "/src/DC.CP.Web"
