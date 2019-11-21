@@ -13,6 +13,10 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'DockerEnLaIndia'
+    command: 'login'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'DockerEnLaIndia'
     repository: 'dockerHub'
     command: 'buildAndPush'
     Dockerfile: 'DC.CP.Web/Dockerfile'
