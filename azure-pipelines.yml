@@ -16,4 +16,4 @@ steps:
     repository: 'dockerHub'
     command: 'buildAndPush'
     Dockerfile: 'DC.CP.Web/Dockerfile'
-    buildContext: ''''''
+    buildContext: ''
