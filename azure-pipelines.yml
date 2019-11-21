@@ -15,3 +15,7 @@ steps:
     command: 'build'
     Dockerfile: 'DC.CP.Web/Dockerfile'
     buildContext: ''
+- task: Docker@2
+  inputs:
+    containerRegistry: 'DockerEnLaIndia'
+    command: 'push'
